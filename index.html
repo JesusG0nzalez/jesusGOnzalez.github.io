@@ -163,15 +163,6 @@
         <section class="card_content" id="Extra">
             <h3 class="title">Extra</h3>
 
-            <article class="Cv_doc">
-                
-                <h6 class="sub-title"> CV Document </h6>
-                <div class="btn-group" >
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal_Doc_es">Español</button>
-                    <!-- href="/doc/cv/es/Cv_doc.pdf" download="Cv_doc.pdf"  -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal_Doc_en">English</button>
-                  </div>
-            </article>
 
             <article class="text_gratitude">
                 This website was created by <b>Velazquez Gonzalez Jesus Alejandro</b>, a student at the <b>Universidad Tecnologica de Tijuana</b>, who took as a reference the use of the <b><a href="https://brittanychiang.com/">brittanychiang</a></b> and <b><a href="https://mattfarley.ca/">mattfarley</a></b> website.
@@ -179,39 +170,6 @@
             
         </section>
 
-        <!-- Modal CV ES-->
-        <div class="modal fade" id="Modal_Doc_es" tabindex="-1" aria-labelledby="Modal_Doc_esLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content  ">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="Modal_Doc_esLabel">Modal CV ESPAÑOL</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <iframe class="cv_doc" src="/doc/cv/cv_es.pdf" frameborder="0" ></iframe> 
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal CV EN -->
-        <div class="modal fade" id="Modal_Doc_en" tabindex="-1" aria-labelledby="Modal_Doc_enLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h1 class="modal-title fs-5" id="Modal_Doc_enLabel">Modal CV ENGLISH</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    
-                    <iframe class="cv_doc" src="/doc/cv/cv_en.pdf" frameborder="0" ></iframe> 
-
-                </div>
-            </div>
-            </div>
-        </div>
 
     </main>
 
@@ -273,11 +231,7 @@ li{
     border-radius: 20px;
 }
 
-.cv_doc{
-    height: 73vh; 
-    width: 100%;
 
-}
 
 /* Specific Desing */
 html ::-webkit-scrollbar{
@@ -480,21 +434,10 @@ header:hover{
             text-decoration:none;
         }
     }
-
-    & .Cv_doc{
-        color: var( --text-important);
-        margin: 20px;
-        margin-inline: auto;
-        text-align: center; 
-    }
 }
 
 @media (max-width: 767px) {
-    .cv_doc{
-        height: 100%; 
-        width: 100%;
-        border: none;
-    }   
+ 
     header{
         position:relative;
         padding-top: 1px;
